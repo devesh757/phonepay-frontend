@@ -63,7 +63,7 @@ const SendMoney = () =>{
         console.log("Sending payload:", { to: to, amount: amount });
         console.log("Token sent:", localStorage.getItem("token"));
             try{
-          await axios.post(`${VITE_API_URL}+/api/v1/user/transfer`,{
+          await axios.post(`${VITE_API_URL}/api/v1/user/transfer`,{
             to:to,
             amount:amount
           },{
